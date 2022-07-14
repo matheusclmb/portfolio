@@ -5,33 +5,35 @@ export const Header = styled.header`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: fit-content;
   }
   h2 {
     color: #fff;
   }
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
   ul {
     display: flex;
     justify-content: space-between;
     gap: 30px;
     list-style: none;
   }
-  a {
+  .nav-links {
     text-decoration: none;
     color: #fff;
     text-shadow: 1px 1px #ff006e;
   }
-  a:hover {
+  .nav-links:hover {
     color: #ff006e;
     text-shadow: 1px 1px #fff;
   }
   svg {
     display: inline;
     fill: #fff;
-  }
-
-  .logo-info {
-    display: flex;
-    gap: 10px;
-    align-items: center;
   }
 `;

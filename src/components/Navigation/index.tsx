@@ -21,18 +21,12 @@ export function Navigation() {
   return (
     <S.Header>
       <nav>
-        <div className="logo-info">
-          <Cat size="20px" />
-          <Link href="/" passHref>
-            <a>
-              <h2>CLMB .dev</h2>
-            </a>
-          </Link>
-        </div>
         <ul>
           {links.map((link) => (
-            <li>
-              <a href={link.href}>{link.label}</a>
+            <li key={link.label}>
+              <a href={link.href} className="nav-links">
+                {link.label}
+              </a>
             </li>
           ))}
         </ul>
