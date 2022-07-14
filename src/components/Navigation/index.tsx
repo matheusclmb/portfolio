@@ -1,4 +1,7 @@
-import * as S from "./Navigation.style.ts";
+import { Cat } from "components/icons/cat";
+import Image from "next/image";
+import Link from "next/link";
+import * as S from "./Navigation.style";
 
 export function Navigation() {
   const links = [
@@ -16,18 +19,24 @@ export function Navigation() {
     },
   ];
   return (
-    <>
-      <S.Header>
-        <nav>
-          <ul>
-            {links.map((link) => (
-              <li>
-                <a href={link.href}>{link.label}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </S.Header>
-    </>
+    <S.Header>
+      <nav>
+        <div className="logo-info">
+          <Cat size="20px" />
+          <Link href="/" passHref>
+            <a>
+              <h2>CLMB .dev</h2>
+            </a>
+          </Link>
+        </div>
+        <ul>
+          {links.map((link) => (
+            <li>
+              <a href={link.href}>{link.label}</a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </S.Header>
   );
 }
