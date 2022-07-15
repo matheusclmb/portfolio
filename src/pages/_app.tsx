@@ -5,17 +5,9 @@ import { Header } from "components/MainHeader";
 import { Loading } from "components/Loading";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    setTimeout(() => {
-      setLoading(false);
-    }, 1500);
-  }, []);
-
   return (
     <>
       <GlobalStyle />
-      {loading && <Loading />}
       <Header />
       <Component {...pageProps} />
     </>
