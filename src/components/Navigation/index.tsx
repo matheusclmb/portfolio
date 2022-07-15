@@ -6,8 +6,12 @@ import * as S from "./Navigation.style";
 export function Navigation() {
   const links = [
     {
+      label: "Home",
+      href: "/",
+    },
+    {
       label: "About Me",
-      href: "#",
+      href: "/about",
     },
     {
       label: "Projects",
@@ -24,9 +28,9 @@ export function Navigation() {
         <ul>
           {links.map((link) => (
             <li key={link.label}>
-              <a href={link.href} className="nav-links">
-                {link.label}
-              </a>
+              <Link href={link.href} passHref>
+                <a className="nav-links">{link.label}</a>
+              </Link>
             </li>
           ))}
         </ul>

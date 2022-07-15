@@ -1,29 +1,22 @@
 import type { AppProps } from "next/app";
 import { GlobalStyle } from "styles/global";
 import React, { useEffect, useState } from "react";
-import dynamic from "next/dynamic";
 import { Header } from "components/MainHeader";
-const Spline = dynamic(() => import("@splinetool/react-spline"), {
-  ssr: false,
-});
+import { Loading } from "components/Loading";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [State, setState] = useState(0);
-
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    setState(1);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
   }, []);
+
   return (
     <>
       <GlobalStyle />
+      {loading && <Loading />}
       <Header />
-
-      <div className="spline-wrapper">
-        <Spline
-          autoRender
-          scene="https://prod.spline.design/RnUQWcvY2nYesoSA/scene.splinecode"
-        />
-      </div>
       <Component {...pageProps} />
     </>
   );

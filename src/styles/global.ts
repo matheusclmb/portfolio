@@ -30,9 +30,17 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+#__next {
+  position: relative;
+}
+
 .spline-wrapper {
   margin: 0 auto;
   width: fit-content;
+}
+
+.text-sub {
+    text-shadow: 1px 1px #ff006e;
 }
 
 
