@@ -1,3 +1,4 @@
+import { FavStack } from "components/FavStack";
 import { MainAbout } from "components/MainAbout";
 import { Header } from "components/MainHeader";
 
@@ -12,6 +13,7 @@ const About: NextPage = () => {
         <Navigation />
         <MainAbout />
         <Technologies />
+        <FavStack />
       </div>
     </>
   );

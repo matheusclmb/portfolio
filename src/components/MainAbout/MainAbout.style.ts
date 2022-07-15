@@ -7,17 +7,22 @@ export const MainAbout = styled.header`
   .about-parent {
     position: relative;
     display: flex;
-    height: 350px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     gap: 40px;
+    margin-top: 60px;
+    background-color: #27272a;
+    border-radius: 20px;
+    padding: 25px 0 25px 0;
+    width: 80%;
   }
   .about-wrapper {
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 50%;
     border: 1px solid #fff;
-    box-shadow: 2px 2px 10px #ff006e;
-    max-width: 350px;
+    max-width: 250px;
     width: 50%;
     height: 100%;
   }
@@ -27,7 +32,8 @@ export const MainAbout = styled.header`
     width: 50%;
   }
   h1 {
-    text-shadow: 2px 2px #ff006e;
+    color: #ff006e;
+    font-weight: 300;
   }
   p {
     color: #fff;

@@ -21,6 +21,10 @@ export function Navigation() {
       label: "Social",
       href: "#",
     },
+    {
+      label: "Contact",
+      href: "#",
+    },
   ];
   return (
     <S.Header>

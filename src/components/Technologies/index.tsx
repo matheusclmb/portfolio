@@ -13,13 +13,16 @@ export const Technologies = () => {
       label: "JavaScript",
     },
     {
+      label: "TypeScript",
+    },
+    {
       label: "Python",
     },
   ];
 
   const frameworks = [
     {
-      label: "Django & Django REST",
+      label: "Django & DRF",
     },
     {
       label: "Flask",
@@ -50,6 +53,9 @@ export const Technologies = () => {
     },
     {
       label: "HostGator",
+    },
+    {
+      label: "PythonAnywhere",
     },
   ];
 

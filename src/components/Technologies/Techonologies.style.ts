@@ -13,18 +13,26 @@ export const Technology = styled.header`
     padding: 0;
   }
   .technolgies-sect {
-    margin-top: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   h1 {
-    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: start;
+    margin-left: 205px;
     color: #fff;
-    text-shadow: 1px 1px #ff006e;
+    text-decoration: underline;
+    text-decoration-color: #525252;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 4px;
+    font-weight: 300;
   }
 
   h2 {
     text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px #ff006e;
+    color: #ff006e;
+    font-weight: 300;
   }
   .technologies-parent {
     display: flex;
