@@ -55,9 +55,14 @@ export const ProjectInfo = () => {
       <div className="projects-wrapper">
         {projectindex.map((proj) => (
           <div className="project-info">
-            <Image src={proj.src} width="600px" height="500px"></Image>
+            <Image
+              key={proj.label}
+              src={proj.src}
+              width="600px"
+              height="500px"
+            ></Image>
             <Link href={proj.href}>
-              <a className="nav-links" target="_blank">
+              <a className="nav-links" target="_blank" rel="noreferrer">
                 <h1>{proj.label}</h1>
               </a>
             </Link>
@@ -67,10 +72,10 @@ export const ProjectInfo = () => {
               <h3>Technologies:</h3>
               <p>{proj.technologies}</p>
               <div className="href-projects">
-                <a href={proj.href} target={proj.custom_targ}>
+                <a href={proj.href} target={proj.custom_targ} rel="noreferrer">
                   Source
                 </a>
-                <a href={proj.live} target={proj.custom_targ}>
+                <a href={proj.live} target={proj.custom_targ} rel="noreferrer">
                   Live
                 </a>
               </div>

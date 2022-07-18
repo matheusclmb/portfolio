@@ -30,7 +30,12 @@ export const SocialInfo = () => {
       <div className="social-container">
         {socials.map((social) => (
           <div className="social-link">
-            <a href={social.href} target="_blank">
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+            >
               <h2>{social.label}</h2>
               <Image src={social.icon} width="80px" height="80px"></Image>
             </a>
