@@ -16,7 +16,11 @@ export const MainAbout = styled.header`
     background-color: #27272a;
     border-radius: 20px;
     padding: 25px 0 25px 0;
-    width: 80%;
+    max-width: 1438px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+    }
   }
   .about-wrapper {
     overflow: hidden;
@@ -30,6 +34,10 @@ export const MainAbout = styled.header`
     display: flex;
     flex-wrap: wrap;
     width: 50%;
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+      width: 100%;
+    }
   }
   h1 {
     color: #ff006e;

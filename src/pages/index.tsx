@@ -10,6 +10,10 @@ const Spline = dynamic(() => import("@splinetool/react-spline"), {
 });
 
 const Home: NextPage = () => {
+  useEffect(() => {
+    document.title = "CLMB";
+  }, []);
+
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     setTimeout(() => {

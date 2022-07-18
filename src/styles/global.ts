@@ -14,7 +14,11 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: 'IBM Plex Mono', sans-serif;
-  background-color: rgb(32 32 35);
+  background-color: #F9F7F7;
+
+   @media screen and (max-width: 768px) {
+    padding: 8px;
+    }
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -40,8 +44,10 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .text-sub {
-    text-shadow: 1px 1px #ff006e;
+    text-shadow: 1px 1px #000;
 }
+
+
 
 
 `;

@@ -6,7 +6,7 @@ export const LoadingWrapper = styled.div`
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background-color: #202023;
-  color: #fff;
+  background-color: #f9f7f7;
+  color: #000;
   top: 0;
 `;
