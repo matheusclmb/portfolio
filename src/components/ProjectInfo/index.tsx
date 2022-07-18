@@ -54,13 +54,8 @@ export const ProjectInfo = () => {
     <P.ProjectInfo>
       <div className="projects-wrapper">
         {projectindex.map((proj) => (
-          <div className="project-info">
-            <Image
-              key={proj.label}
-              src={proj.src}
-              width="600px"
-              height="500px"
-            ></Image>
+          <div key={proj.label} className="project-info">
+            <Image src={proj.src} width="600px" height="500px"></Image>
             <Link href={proj.href}>
               <a className="nav-links" target="_blank" rel="noreferrer">
                 <h1>{proj.label}</h1>
