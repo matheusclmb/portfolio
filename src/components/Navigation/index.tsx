@@ -45,18 +45,25 @@ export function Navigation() {
             ))}
           </ul>
         </div>
-        {/* Hamburguer will be here */}
-        <div className="mobile-nav">
-          <Hamburger toggled={isOpen} toggle={setOpen} />
-          <ul>
-            {links.map((link) => (
-              <li key={link.label}>
-                <Link href={link.href} passHref>
-                  <a className="nav-links">{link.label}</a>
-                </Link>
-              </li>
-            ))}
-          </ul>
+
+        <div className="mobile-container">
+          <button className="nav-btn" onClick={() => setOpen(!isOpen)}>
+            {" "}
+            <Hamburger toggled={isOpen} toggle={setOpen} />
+          </button>
+          {isOpen && (
+            <div className="mobile-nav">
+              <ul>
+                {links.map((link) => (
+                  <li key={link.label}>
+                    <Link href={link.href} passHref>
+                      <a className="nav-links">{link.label}</a>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
       </nav>
     </S.Header>
