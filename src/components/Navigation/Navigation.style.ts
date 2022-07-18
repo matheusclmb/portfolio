@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
+  @media screen and (max-width: 768px) {
+    top: 0;
+    position: absolute;
+  }
+
   nav {
     font-size: 1.5rem;
     display: flex;
@@ -35,5 +40,53 @@ export const Header = styled.header`
   svg {
     display: inline;
     fill: #fff;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+
+  .nav-btn {
+    position: relative;
+    z-index: 99;
+  }
+
+  .mobile-container {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+
+  .desktop-nav {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .mobile-nav {
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    z-index: 98;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      justify-content: center;
+      height: 100%;
+    }
+
+    a {
+      @media screen and (max-width: 768px) {
+        color: #000;
+        text-shadow: 1px 1px #ff006e;
+      }
+    }
   }
 `;
