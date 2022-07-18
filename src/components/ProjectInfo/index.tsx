@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import * as P from "./ProjectInfo.style";
+import React from "react";
 
 export const ProjectInfo = () => {
   const projectindex = [
@@ -54,28 +55,38 @@ export const ProjectInfo = () => {
     <P.ProjectInfo>
       <div className="projects-wrapper">
         {projectindex.map((proj) => (
-          <div key={proj.label} className="project-info">
-            <Image src={proj.src} width="600px" height="500px"></Image>
-            <Link href={proj.href}>
-              <a className="nav-links" target="_blank" rel="noreferrer">
-                <h1>{proj.label}</h1>
-              </a>
-            </Link>
+          <React.Fragment key={proj.label}>
+            <div className="project-info">
+              <Image src={proj.src} width="600px" height="500px"></Image>
+              <Link href={proj.href}>
+                <a className="nav-links" target="_blank" rel="noreferrer">
+                  <h1>{proj.label}</h1>
+                </a>
+              </Link>
 
-            <div className="project-info-text">
-              <p>{proj.about}</p>
-              <h3>Technologies:</h3>
-              <p>{proj.technologies}</p>
-              <div className="href-projects">
-                <a href={proj.href} target={proj.custom_targ} rel="noreferrer">
-                  Source
-                </a>
-                <a href={proj.live} target={proj.custom_targ} rel="noreferrer">
-                  Live
-                </a>
+              <div className="project-info-text">
+                <p>{proj.about}</p>
+                <h3>Technologies:</h3>
+                <p>{proj.technologies}</p>
+                <div className="href-projects">
+                  <a
+                    href={proj.href}
+                    target={proj.custom_targ}
+                    rel="noreferrer"
+                  >
+                    Source
+                  </a>
+                  <a
+                    href={proj.live}
+                    target={proj.custom_targ}
+                    rel="noreferrer"
+                  >
+                    Live
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </React.Fragment>
         ))}
       </div>
     </P.ProjectInfo>
