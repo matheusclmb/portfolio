@@ -13,7 +13,7 @@ export const Header = styled.header`
     color: #fff;
   }
   a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
   }
 
@@ -26,7 +26,7 @@ export const Header = styled.header`
   .nav-links {
     text-decoration: none;
     color: #fff;
-    text-shadow: 1px 1px #ff006e;
+    text-shadow: 2px 2px #000;
   }
   .nav-links:hover {
     color: #ff006e;

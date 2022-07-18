@@ -3,25 +3,24 @@ import { MainAbout } from "components/MainAbout";
 import { Header } from "components/MainHeader";
 
 import { Navigation } from "components/Navigation";
+import { ProjectInfo } from "components/ProjectInfo";
 import { Technologies } from "components/Technologies";
 import type { NextPage } from "next";
 import { useEffect } from "react";
 
-const About: NextPage = () => {
+const Projects: NextPage = () => {
   useEffect(() => {
-    document.title = "About | CLMB";
+    document.title = "Projects | CLMB";
   }, []);
 
   return (
     <>
       <div>
         <Navigation />
-        <MainAbout />
-        <Technologies />
-        <FavStack />
+        <ProjectInfo />
       </div>
     </>
   );
 };
 
-export default About;
+export default Projects;

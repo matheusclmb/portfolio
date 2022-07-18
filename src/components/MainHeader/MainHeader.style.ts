@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MainHeader = styled.header`
   h2 {
-    color: #fff;
+    color: #000;
   }
   a {
     color: #fff;
@@ -11,7 +11,7 @@ export const MainHeader = styled.header`
 
   svg {
     display: inline;
-    fill: #fff;
+    fill: #000;
   }
 
   .logo-info {
