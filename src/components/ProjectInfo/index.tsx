@@ -55,7 +55,7 @@ export const ProjectInfo = () => {
     <P.ProjectInfo>
       <div className="projects-wrapper">
         {projectindex.map((proj) => (
-          <React.Fragment key={Math.floor(Math.random() * 10)}>
+          <React.Fragment key={proj.label}>
             <div className="project-info">
               <Image src={proj.src} width="600px" height="500px"></Image>
               <Link href={proj.href}>
