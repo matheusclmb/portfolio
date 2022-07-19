@@ -8,7 +8,7 @@ export const ProjectInfo = () => {
     {
       label: "MasterDjango",
       href: "https://github.com/matheusclmb/master-django-project",
-      live: "https://masterdjango.herokuapp.com/",
+      live: "https:// devcolomboc.pythonanywhere.com/",
       custom_targ: "_blank",
 
       src: "/imgs/masterdjango.png",
