@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Header = styled.header`
   .tel-btn {
-    background-color: #3ab4f2;
     border: none;
     border-radius: 10px;
     padding: 10px;
@@ -12,13 +11,15 @@ export const Header = styled.header`
     background-color: #0078aa;
   }
   button {
+    background-color: #27272a;
+    color: #fff;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #ff8b8b;
     border: none;
     border-radius: 10px;
     padding: 10px;
+    font-weight: bold;
   }
 
   button:hover {

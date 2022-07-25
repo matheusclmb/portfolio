@@ -8,12 +8,12 @@ export const ContactInfo = () => {
         <div className="contact-info">
           <a href="mailto:dev.colomboc@gmail.com">
             <button>
-              <img src="imgs/gmail.svg" /> Send Email
+              <img src="imgs/sticker-gmail.svg" /> GMail
             </button>
           </a>
           <a href="https://t.me/matheusclmb">
             <button className="tel-btn">
-              <img src="imgs/telegram.svg" /> Send Message
+              <img src="imgs/sticker-telegram.svg" /> Telegram
             </button>
           </a>
         </div>

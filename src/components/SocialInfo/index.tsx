@@ -6,22 +6,22 @@ export const SocialInfo = () => {
     {
       label: "Github",
       href: "https://github.com/matheusclmb",
-      icon: "/imgs/github.svg",
+      icon: "/imgs/sticker-github.svg",
     },
     {
       label: "Steam",
       href: "https://steamcommunity.com/id/persaiscrying/",
-      icon: "/imgs/steam.svg",
+      icon: "/imgs/sticker-steam.svg",
     },
     {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/matheusclmb/",
-      icon: "/imgs/linkedin.svg",
+      icon: "/imgs/sticker-linkedin.svg",
     },
     {
       label: "Instagram",
       href: "https://www.instagram.com/matheuscolomboc/",
-      icon: "/imgs/instagram.svg",
+      icon: "/imgs/sticker-instagram.svg",
     },
   ];
 

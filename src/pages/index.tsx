@@ -3,6 +3,7 @@ import { Header } from "components/MainHeader";
 import { Navigation } from "components/Navigation";
 import type { NextPage } from "next";
 
+import Image from "next/image";
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 const Spline = dynamic(() => import("@splinetool/react-spline"), {
@@ -23,14 +24,9 @@ const Home: NextPage = () => {
 
   return (
     <>
-      {loading && <Loading />}
-
       <div>
         <div className="spline-wrapper">
-          <Spline
-            autoRender
-            scene="https://prod.spline.design/LPOT3zf8GdsiNsZo/scene.splinecode"
-          />
+          <Image src="/imgs/cat-rain.gif" width="450px" height="220px"></Image>
         </div>
         <Navigation />
       </div>
